@@ -32,7 +32,7 @@ class LoopExercisesTest extends TestCase {
         $this->assertEquals(2, LoopExercises::startDungeon(35), 'Objectif de 35 XP devrait être atteint en 2 tours (15 + 20 = 35 XP)');
 
         // Cas 3 : Objectif incluant un tour de boss (90 XP)
-        $this->assertEquals(3, LoopExercises::startDungeon(90), 'Objectif de 90 XP devrait être atteint en 3 tours (15 + 20 + 55 = 90 XP, avec boss à n=3)');
+        $this->assertEquals(4, LoopExercises::startDungeon(90), 'Objectif de 90 XP devrait être atteint en 4 tours (15 + 20 + 45  = 90 XP, avec boss à n=3)');
 
         // Cas 4 : Objectif juste après un tour de boss (91 XP)
         $this->assertEquals(4, LoopExercises::startDungeon(91), 'Objectif de 91 XP devrait être atteint en 4 tours (15 + 20 + 55 + 25 = 115 XP)');

@@ -6,7 +6,6 @@ require_once __DIR__ . '/../src/ArrayExercises.php';
 
 class ArrayExercisesTest extends TestCase
 {
-
     public function testSumAllElements()
     {
         $this->assertEquals(0, []);

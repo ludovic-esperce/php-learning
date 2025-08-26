@@ -26,7 +26,9 @@ class BasicsExercises
      */
     public static function mealParticipationRate(int $salary, int $childrenCount, bool $single): int
     {
-        return 0;
+        // TODO retour en "dur" de zéro --> a changer
+
+        return 20;
     }
 
     /**

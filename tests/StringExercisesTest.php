@@ -10,6 +10,18 @@ class StringExercisesTest extends TestCase
         $this->assertEquals(3, StringExercises::countChar("banane", "a"));
         $this->assertEquals(0, StringExercises::countChar("test", "z"));
     }
+
+    public function testCountMentions()
+    {
+        $this->assertEquals(2, StringExercises::countMentions("J'ai parlé avec @jean et @marie ce matin."));
+        $this->assertEquals(0, StringExercises::countMentions("Ce message ne contient aucune mention."));
+        $this->assertEquals(1, StringExercises::countMentions("Tu devrais écrire à @"));
+        $this->assertEquals(1, StringExercises::countMentions("@luc est en ligne."));
+        $this->assertEquals(3, StringExercises::countMentions("@bob@bob@bob"));
+        $this->assertEquals(0, StringExercises::countMentions(""));
+        $this->assertEquals(0, StringExercises::countMentions(str_repeat("bonjour ", 100)));
+        $this->assertEquals(2, StringExercises::countMentions("As-tu vu @emma ? Elle parlait à @bob hier."));
+    }
     
     public function testCountLowerCase()
     {

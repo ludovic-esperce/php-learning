@@ -53,6 +53,28 @@ class LoopExercises
     }
 
     /**
+     * Contexte :
+     * Nous déveleppons un jeu vidéo. Nous allons simuler la progression d'un personnage dans un donjon.
+     * Un personnage évolue dans un donjon tour par tour.
+     * 
+     * A chaque tour, il gagne de l'expérience. Il doit atteindre un objectif fixé pour terminer le donjon.
+     * Le personnage débute avec 0 XP.
+     * 
+     * Règle d'évolution de l'expérience gagnée :
+     * - Pour chaque tour 'n' (commençant à 1), le héros gagne 5 * n + 10 XP.
+     * - Tours les 3 tours (par exemple n = 3, n = 6, n = 9) le personnage fait face à un boss et gagne un bonus fixe de 30 XP et non pas 10 XP. Par exemple 5 * n + 30 XP.
+     * 
+     * La fonction doit calculer le nombre de tours nécessaires pour atteindre l'XP ciblée (paramètre $xpGoal)
+     * 
+     * @param integer $xpGoal
+     * @return integer Le nombre de tours nécessaires poour atteindre l'objectif
+     */
+    public static function startDungeon(int $xpGoal): int
+    {
+        return 0;
+    }
+
+    /**
      * Calcule et retourne la factorielle d’un nombre donné.
      * Exemple : factorial(5) retourne 120 (car 5 × 4 × 3 × 2 × 1)
      * Utiliser une boucle for.
@@ -64,7 +86,7 @@ class LoopExercises
      * @param int $n Le nombre dont on veut calculer la factorielle
      * @return int La factorielle de $n
      */
-    function factorial($n): int
+    public static function factorial($n): int
     {
         // TODO : Utiliser une boucle for pour calculer la factorielle
 
@@ -86,7 +108,7 @@ class LoopExercises
     {
         // variable qui contiendra le résultat
         $sum = 0;
-        
+
         // Indice il est possible de retrouver le chiffre le plus à droite (par exemple 3 pour 123) en récupérant le reste de la divisio par 10
         // L'opérateur permettant de calculer le reste est le modulo (%)
         // Par exemple : 123 % 10 retourne 3

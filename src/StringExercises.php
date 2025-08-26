@@ -22,6 +22,24 @@ class StringExercises
         return -1;
     }
 
+    /**
+     * Fonction qui compte combien de mentions indiquées par le caractère '@' sont présentes dans un message.
+     * 
+     * Exemple :
+     * "@emma okay pour la modification de la fonction. @jean pas sûr par contre"
+     * 
+     * -> retourne 2
+     *
+     * @param string $message Le message à traiter
+     * @return integer Le nombre de mentions présentes
+     */
+    public static function countMentions(string $message): int {
+
+        // Indice : pour comparer un caractère
+        // $message[$i] === '@'
+        
+        return 0;
+    }
     
     /**
      * Compte le nombre de caractères minuscules.
@@ -37,6 +55,7 @@ class StringExercises
         return -1;
     }
 
+    
     /**
      * Renvoie le miroir d'une chaîne.
      * 

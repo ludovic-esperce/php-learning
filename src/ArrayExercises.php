@@ -231,6 +231,8 @@ class ArrayExercises
      * 
      * Dans le cas où le mot n'a pas été retrouvé, la fonction pourra renvoyer [[-1, -1], [-1, -1]]
      * 
+     * Algorithme pas si évident, attention.
+     * 
      * @param array $array Le tableau 2D à traiter.
      * @param string $toLocate Le mot à localiser.
      * @return array Tableau contenant deux paires [i, j] : début et fin du mot.
